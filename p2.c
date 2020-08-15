@@ -7,16 +7,13 @@ main() {
     int   semidA = get_sem(".",'A');
     int   semidB = get_sem(".",'B');
     int   semidC = get_sem(".",'C');
-    int   semidD = get_sem(".",'D');
     do {
-        // *** this is where you should place semaphore 
+        // *** this is where you should place semaphore
        P(semidB);
        printf("P222222222 is here\n"); i++ ;
-       
        // *** this is where you should place semaphore
-	V(semidD);
-	V(semidD);
-	V(semidC);
-   
+        V(semidC);
+        V(semidC);
+
     }  while (i < 100);
 }
